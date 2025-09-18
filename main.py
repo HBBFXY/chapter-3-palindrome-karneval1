@@ -1,7 +1,9 @@
 # 这里编写你的代码
-initial_weight = 50  
-moon_ratio = 0.165  
-for year in range(1, 11):
-    earth_weight = initial_weight + year * 0.5
-    moon_weight = earth_weight * moon_ratio
-    print(f"第{year}年，地球上的体重：{earth_weight:.2f}kg，月球上的体重：{moon_weight:.2f}kg")
+n = input('请输入一个5位数字: ')
+if len(n) != 5 or not n.isdigit():
+    print('输入错误: 请输入5位数字')
+else:
+    if n == n[::-1]:
+        print('是回文数')
+    else:
+        print('不是回文数')
